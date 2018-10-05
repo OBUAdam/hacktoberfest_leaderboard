@@ -1,0 +1,39 @@
+{
+  "name": "2018_hacktoberfest_leaderboard",
+  "version": "1.0.0",
+  "description": "A leaderboard of pull requests made by Techlahoma members during the 2018 Hacktoberfest",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinwk/2018_hacktoberfest_leaderboard.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "react",
+    "redux",
+    "express",
+    "reactstrap"
+  ],
+  "author": "Austin W Keeton",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/austinwk/2018_hacktoberfest_leaderboard/issues"
+  },
+  "homepage": "https://github.com/austinwk/2018_hacktoberfest_leaderboard#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
