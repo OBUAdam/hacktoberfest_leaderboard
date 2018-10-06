@@ -3,7 +3,6 @@ const express = require('express');
 const path = require('path');
 
 const participants = require('./routes/api/participants');
-const scores = require('./routes/api/scores');
 
 const app = express();
 
@@ -12,7 +11,6 @@ app.use(bodyParser.json());
 
 // Use Routes
 app.use('/api/participants', participants);
-app.use('/api/scores', scores);
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
