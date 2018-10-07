@@ -21,10 +21,11 @@ router.get('/', (req, res) => {
 
       Promise.all(requests)
         .then(gitHubStats => {
-          const profiles = gitHubStats.map(stats => {
+          const profiles = gitHubStats.map((stats, index) => {
+            const { githubUserName, displayName } = participants.data[index];
             const numPullReq = stats.total_count;
 
-            return { numPullReq };
+            return { displayName, githubUserName, numPullReq };
           });
 
           res.send(profiles);
