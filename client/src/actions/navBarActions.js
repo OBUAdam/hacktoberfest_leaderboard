@@ -1,7 +1,7 @@
 import { TOGGLE_NAVBAR } from './types';
 
-const toggleNavBar = () => dispatch => {
-  dispatch({
+export const toggleNavBar = () => {
+  return {
     type: TOGGLE_NAVBAR
-  });
+  };
 };

@@ -1,13 +1,20 @@
 import axios from 'axios';
-import { GET_POINTS } from './types';
+import { GET_PARTICIPANTS, TOGGLE_LEADERBOARD_LOADING } from './types';
 
-export const getPoints = () => dispatch => {
+export const getParticipants = () => dispatch => {
   axios
-    .get('/api/points')
-    .then(res =>
+    .get('/api/participants')
+    .then(res => {
+      const sorted = res.data.sort((a, b) => b.numPullReq - a.numPullReq);
       dispatch({
-        type: GET_POINTS,
-        payload: res.data
+        type: GET_PARTICIPANTS,
+        payload: sorted
       })
-    );
+    });
+};
+
+export const toggleLeaderboardLoading = () => {
+  return {
+    type: TOGGLE_LEADERBOARD_LOADING
+  };
 };
