@@ -2,7 +2,7 @@
   "name": "2018_hacktoberfest_leaderboard",
   "version": "1.0.0",
   "description": "A leaderboard of pull requests made by Techlahoma members during the 2018 Hacktoberfest",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client-install": "npm install --prefix client",
