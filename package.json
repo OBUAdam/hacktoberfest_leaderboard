@@ -27,9 +27,9 @@
   "author": "Austin W Keeton",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/austinwk/2018_hacktoberfest_leaderboard/issues"
+    "url": "https://github.com/austinwk/hacktoberfest_leaderboard/issues"
   },
-  "homepage": "https://github.com/austinwk/2018_hacktoberfest_leaderboard#readme",
+  "homepage": "https://github.com/austinwk/hacktoberfest_leaderboard#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
