@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import path from 'path';
 
-import routes from './server/src/routes/participantRoutes';
+import routes from './routes/participantRoutes';
 
 
 // If not in production, set environment variables from ./.env
