@@ -3,7 +3,7 @@ import { GET_PARTICIPANTS, TOGGLE_LEADERBOARD_LOADING } from './types';
 
 export const getParticipants = () => dispatch => {
   axios
-    .get('/participant')
+    .get('/api/participants')
     .then(res => {
       console.log(res);
       const sorted = res.data.sort((a, b) => b.numPullReq - a.numPullReq);
