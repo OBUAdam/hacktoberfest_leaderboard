@@ -5,7 +5,6 @@ export const getParticipants = () => dispatch => {
   axios
     .get('/api/participants')
     .then(res => {
-      console.log(res);
       const sorted = res.data.sort((a, b) => b.numPullReq - a.numPullReq);
       dispatch({
         type: GET_PARTICIPANTS,
