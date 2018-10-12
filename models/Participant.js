@@ -18,4 +18,4 @@ const ParticipantSchema = new Schema({
   }
 }, { timestamps: true });
 
-module.exports = ParticipantSchema;
+module.exports = Participant = mongoose.model('participant', ParticipantSchema);
