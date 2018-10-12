@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const routes = require('./routes/participantRoutes');
+const participants = require('./routes/api/participants');
 
 
 // If not in production, set environment variables from ./.env
@@ -32,8 +32,10 @@ mongoose
 
 // Start server
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use('/api/participants', participants)
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
@@ -44,7 +46,5 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
-
-routes(app);
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
