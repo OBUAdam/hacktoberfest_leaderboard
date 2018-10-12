@@ -4,7 +4,12 @@
   "description": "A leaderboard of pull requests made by Techlahoma members during the 2018 Hacktoberfest",
   "main": "./server/src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/src/index.js",
+    "server": "nodemon ./server/src/index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
@@ -25,9 +30,6 @@
   },
   "homepage": "https://github.com/austinwk/hacktoberfest_leaderboard#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
     "nodemon": "^1.18.4"
   },
   "dependencies": {
