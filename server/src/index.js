@@ -1,9 +1,9 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import bodyParser from 'body-parser';
-import path from 'path';
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const path = require('path');
 
-import routes from './routes/participantRoutes';
+const routes = require('./routes/participantRoutes');
 
 
 // If not in production, set environment variables from ./.env

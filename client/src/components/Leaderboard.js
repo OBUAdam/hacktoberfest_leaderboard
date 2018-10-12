@@ -9,7 +9,6 @@ class Leaderboard extends Component {
   }
 
   render() {
-    console.log(participants);
     const participants = this.props.participants;
 
     return (

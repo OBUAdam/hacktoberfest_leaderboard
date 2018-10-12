@@ -1,8 +1,9 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
+
 
 const Schema = mongoose.Schema;
 
-export const ParticipantSchema = new Schema({
+const ParticipantSchema = new Schema({
   githubUserName: {
     type: String,
     required: 'GitHub username required'
@@ -16,3 +17,5 @@ export const ParticipantSchema = new Schema({
     required: 'Number of pull requests required'
   }
 }, { timestamps: true });
+
+module.exports = ParticipantSchema;
