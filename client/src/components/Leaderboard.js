@@ -12,7 +12,7 @@ class Leaderboard extends Component {
     const participants = this.props.participants;
 
     return (
-      <Table>
+      <Table responsive={true}>
         <thead>
           <tr>
             <th>#</th>
