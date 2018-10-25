@@ -1,20 +1,11 @@
 import axios from 'axios';
-import { GET_PARTICIPANTS, TOGGLE_LEADERBOARD_LOADING } from './types';
+import { GET_PARTICIPANTS } from './types';
 
 export const getParticipants = () => dispatch => {
   axios
     .get('/api/participants')
-    .then(res => {
-      const sorted = res.data.sort((a, b) => b.numPullReq - a.numPullReq);
-      dispatch({
+    .then(res => dispatch({
         type: GET_PARTICIPANTS,
-        payload: sorted
-      })
-    });
-};
-
-export const toggleLeaderboardLoading = () => {
-  return {
-    type: TOGGLE_LEADERBOARD_LOADING
-  };
+        payload: res.data
+      }));
 };
