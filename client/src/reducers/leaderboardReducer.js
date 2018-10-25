@@ -1,4 +1,4 @@
-import { GET_PARTICIPANTS, TOGGLE_LEADERBOARD_LOADING } from '../actions/types';
+import { GET_PARTICIPANTS } from '../actions/types';
 
 const initialState = {
   participants: [],
@@ -11,11 +11,6 @@ export default function(state=initialState, action) {
       return {
         ...state,
         participants: action.payload,
-      };
-    case TOGGLE_LEADERBOARD_LOADING:
-      return {
-        ...state,
-        loading: !state.loading
       };
     default:
       return state;
