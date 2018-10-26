@@ -1,6 +1,6 @@
 # Hacktoberfest Leaderboard
 
-A website that showcases your involvement in Hacktoberfest! You can view the website at [hfleaderboard.herokuapp.com](https://hfleaderboard.herokuapp.com/). To get on the leaderboard add your name to the participants file in the [2018_hacktoberfest_participants](https://github.com/austinwk/2018_hacktoberfest_participants) repo. The website currently updates daily, but will be updating hourly soon!
+A website that showcases your involvement in Hacktoberfest! You can view the website at [hfleaderboard.herokuapp.com](https://hfleaderboard.herokuapp.com/). To get on the leaderboard add your name to the participants file in the [2018_hacktoberfest_participants](https://github.com/austinwk/2018_hacktoberfest_participants) repo. The leaderboard is updated shortly after the top of each hour.
 
 ## Hacktoberfest
 
