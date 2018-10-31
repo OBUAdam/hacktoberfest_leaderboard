@@ -14,7 +14,7 @@ But, why would you want to look at someone's code? Well, many reasons:
 
 1. To learn. Maybe you, like me, are interested in web development and are hungry to see how it's done.
 2. To help others. Everyone can use a hand, especially when it comes to programming. If you see some way to contribute to someone elses project, you should! Most people love when others roll up their sleeves and dive in with them.
-3. It's fun! I programmed by myself for 2 years before I realized that there were _thousands_ of other people out their doing it too. Now that I am part of the tech community I have a blast talking about code, introducing people to the trade, and encouraging others to learn and grow.
+3. It's fun! I programmed by myself for 2 years before I realized that there were _thousands_ of other people out there doing it too. Now that I am part of the tech community I have a blast talking about code, introducing people to the trade, and encouraging others to learn and grow.
 4. A **FREE T-SHIRT!!!** Yep, if you make 5 contributions ([pull requests](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)) to someone else's code on github during the month of October, the partners of Hacktoberfest will send you a free shirt. Get a look at this year's tasty design by going to [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com/) and scrolling to the bottom of the page.
 
 Ready to get involved? Click [here](https://github.com/austinwk/2018_hacktoberfest_participants) to see instructions on making your first contribution.
